@@ -32,12 +32,10 @@ export const query = graphql`
             originalSrc
           }
           shopifyId
+          handle
           description
           availableForSale
           priceRange {
-            maxVariantPrice {
-              amount
-            }
             minVariantPrice {
               amount
             }
