@@ -12,13 +12,24 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "gatsby": "^2.32.3",
     "gatsby-source-shopify": "^3.10.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "shopify-buy": "^2.11.0"
+    "shopify-buy": "^2.11.0",
+    "storybook": "^6.1.18"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@storybook/addon-actions": "^6.1.18",
+    "@storybook/addon-essentials": "^6.1.18",
+    "@storybook/addon-links": "^6.1.18",
+    "@storybook/react": "^6.1.18",
+    "babel-loader": "^8.2.2"
   }
 }
