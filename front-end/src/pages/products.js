@@ -13,6 +13,7 @@ const ProductsPage = ({ data }) => (
             <Link to={`/product/${node.handle}`}>{node.title}</Link>
             {" - "}${node.priceRange.minVariantPrice.amount}
           </h3>
+          <img src={node.images[0].originalSrc} alt={`yummy bikkies`}/>
           <p>{node.description}</p>
         </li>
       ))}
