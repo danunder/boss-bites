@@ -9,6 +9,14 @@ module.exports = {
       accessToken: `aa4b9696ed83deebf840668e65d23913`,
     },
   },
-
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
+    },
+    `custom-mui-theme`,
     ]
 }

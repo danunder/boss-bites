@@ -1,13 +1,17 @@
-import { ThemeOptions } from '@material-ui/core/styles/createMuiTheme';
+import { createMuiTheme } from '@material-ui/core/styles';
 
-export const themeOptions: ThemeOptions = {
+const themeData = {
   palette: {
-    type: 'light',
     primary: {
       main: '#e6a3a3',
     },
     secondary: {
       main: '#993f3f',
     },
-  },
-};
+  }
+}
+
+const themeName = "pinkAndPink";
+
+export default createMuiTheme({ ...themeData, themeName });
+

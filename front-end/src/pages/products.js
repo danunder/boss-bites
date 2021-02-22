@@ -2,9 +2,11 @@ import React from "react";
 import { Link, graphql } from "gatsby"
 
 import Layout from '../components/layout'
+import { Button } from '@material-ui/core'
 
 const ProductsPage = ({ data }) => (
   <Layout>
+    <Button>Here I am</Button>
     <h1>Products</h1>
     <ul>
       {data.allShopifyProduct.edges.map(({ node }) => (
