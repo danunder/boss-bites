@@ -6,7 +6,8 @@ import { Button } from '@material-ui/core'
 
 const ProductsPage = ({ data }) => (
   <Layout>
-    <Button>Here I am</Button>
+    <Button color="primary" variant="contained">A button!</Button>
+      <Button color="secondary" variant="contained">A button!</Button>
     <h1>Products</h1>
     <ul>
       {data.allShopifyProduct.edges.map(({ node }) => (
